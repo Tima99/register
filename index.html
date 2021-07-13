@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="my_response_style.css">
+    <script src="my_response.js" defer></script>
+
+    <title>MyDoctor</title>
+</head>
+<body>
+    <div class="head">
+        <img
+          height="100px"
+          width="150px"
+          src="./healthy-life-logo_5417-13.jpg"
+        />
+        <h2>Customer Self Booking - Dr. Ashok C</h2>
+
+        <div class="progress-bar"></div>
+    </div>
+
+    <div class="move-msg">
+    <marquee>If you are an existing customer, type your Phone# to retrieve your
+        details</marquee>
+    </div>
+
+    <div class="form-fill">
+        <form action="">
+            <div class="usr-input-log">
+                <label for="phone" style="float: left;">*Customer Phone</label>
+                <a href="">
+                    <img
+                      class="img-arrow"
+                      alt="help"
+                      height="28"
+                      width="28"
+                      src="./address_icon.png"
+                  />
+                </a>
+                <input type="tel" name="phone" id="phone" placeholder="Enter phone# no.">
+
+                <button class="btn">Check Customer</button>
+                
+            </div>
+            <hr class="divider">
+            <div class="usr-input">
+                <label for="name">*Customer name</label>
+                <input type="text" name="name" id="name" class="scanf" placeholder="Enter your good name">
+            </div>
+
+            <div class="usr-input">
+                <label for="address">*Customer address</label>
+                <textarea name="address" id="address" class="scanf" placeholder="Maximum characters : 200" maxlength="200"></textarea>
+                <div class="warn">
+                    <h6>You have 
+                        <span id="remain-character">200</span>
+                        characters left
+                    </h6>
+                </div>
+            </div>
+
+            <div class="usr-input">
+                <label for="gender">*Gender</label>
+                <select name="gender" id="gender" class="scanf" >
+                    <option value="0">Male</option>
+                    <option value="1">Female</option>
+                    <option value="2">Others</option>
+                </select>
+            </div>
+
+            <div class="usr-input">
+                <label for="dob">date of birth</label>
+                <input type="date" name="dob" id="dob" class="scanf" value="20 8 2001" >
+            </div>
+
+            <div class="usr-input">
+                <label for="email">*Email</label>
+                <input type="email" name="email" id="email" class="scanf" placeholder="e.g, ekshya2556@gmail.com">
+            </div>
+
+            <div class="usr-input">
+                <label for="appointmentDay">*Select Day</label>
+                <input type="datetime-local" name="appointmentDay" class="scanf" id="appointmentDay">
+            </div>
+
+            <div class="usr-input">
+                <label for="selectedTests">*Select test</label>
+                <select
+                    name="selectedTests"
+                    multiple="multiple"
+                    class="scanf"
+                    id="selectedTests"
+                  >
+                    <option value="2918">
+                      17 ALPHA-HYDROXY PROGESTERONE @ 1500
+                    </option>
+                    <option value="2919">
+                      24 HR URINE CREATININE CLEARANCE @ 600
+                    </option>
+                    <option value="2920">ABS. GRANULOCYTE COUNT @ 300</option>
+                    <option value="2921">ABSOLUTE BASOPHIL COUNT @ 300</option>
+                    <option value="2922">
+                      ABSOLUTE EOSINOPHIL COUNT @ 300
+                    </option>
+                    <option value="2923">ABSOLUTE LEUCOCYTE COUNT @ 500</option>
+                    <option value="2924">
+                      ABSOLUTE LYMPHOCYTE COUNT @ 300
+                    </option>
+                    <option value="2925">ABSOLUTE MONOCYTE COUNT @ 300</option>
+                    <option value="2926">
+                      ABSOLUTE NEUTROPHIL COUNT @ 300
+                    </option>
+                    <option value="2927">
+                      ACETYLCHOLINE RECEPTOR ANTIBODIES @ 3000
+                    </option>
+                    <option value="2928">
+                      ACID PHOSPHATASE (PROSTATIC) @ 350
+                    </option>
+                    <option value="2929">ACTH ( ECLIA) @ 1800</option>
+                    <option value="2930">
+                      ACTIVATED PROTEIN C RESISTANCE (FACTOR V LEIDEN), CITRATED
+                      BLOOD @ 6000
+                    </option>
+                    <option value="2931">
+                      ACTIVE-B12 (HOLOTRANSCOBALAMIN) @ 2000
+                    </option>
+                    <option value="2932">
+                      ACUTE VIRAL HEPATITIS PANEL @ 5500
+                    </option>
+                    <option value="2933">
+                      ADENOSINE DEAMINASE (ENZYMATIC METHOD) @ 750
+                    </option>
+                    <option value="2934">ADOPTION PROFILE @ 13500</option>
+                    <option value="2935">
+                      ADVANCED SMART CHECK PROFILE (ADVANCE SMAC) @ 4750
+                    </option>
+                    <option value="2936">
+                      ADVANCED SMART CHECK PROFILE RANDOM (ADVANCE SMAC) @ 4750
+                    </option>
+                    <option value="2937">
+                      AFB SECOND LINE DRUG SENSITIVITY @ 15000
+                    </option>
+                    <option value="2938">
+                      AFB SIRE PANEL DRUG SENSITIVITY @ 4000
+                    </option>
+                    <option value="2939">AFP-TRIPLE TEST @ 750</option>
+                    <option value="2940">
+                      ALBUMIN CREATININE RATIO (SPOT) @ 100
+                    </option>
+                    <option value="2941">ALKALINE PHOSPHATASE @ 250</option>
+                    <option value="2942">
+                      ALLERGY (SPECIFIC IGE) IMMUNOCAP, SERUM (5 Allergen) @
+                      6000
+                    </option>
+                    <option value="2943">
+                      ALLERGY (SPECIFIC IGE) IMMUNOCAP, SERUM (3 Allergen) @
+                      4000
+                    </option>
+                    <option value="2944">
+                      ALLERGY (SPECIFIC IGE) IMMUNOCAP, SERUM (1 Allergen) @
+                      1500
+                    </option>
+                    <option value="2945">
+                      ALLERGY COMPREHENSIVE / EXTENTED PANEL, IMMUNOCAP, SERUM @
+                      19900
+                    </option>
+                    <option value="2946">
+                      ALLERGY FOOD / ECZEMA PANEL, IMMUNOCAP, SERUM @ 14900
+                    </option>
+                    <option value="2947">
+                      ALLERGY RESPIRATORY / RHINITIS PANEL, IMMUNOCAP, SERUM @
+                      10900
+                    </option>
+                    <option value="2948">
+                      ALLERGY SCREENING (PHADIATOP), SERUM @ 1500
+                    </option>
+                    <option value="2949">ALLERGY SCREENING PANEL @ 2600</option>
+                    <option value="2950">
+                      ALPHA FETO PROTEIN (PRE NATAL) [ECLIA] @ 700
+                    </option>
+                    <option value="2951">
+                      ALPHA FETO PROTEIN (TUMOUR MARKER) @ 950
+                    </option>
+                    <option value="2952">
+                      ALPHA FETO PROTEIN [AMNIOTIC FLUID] @ 950
+                    </option>
+                    <option value="2953">
+                      AMOEBIC SEROLOGY (IgG ANTIBODIES TO E. HISTOLYTICA) @ 1400
+                    </option>
+                    <option value="2954">AMYLASE FLUID @ 500</option>
+                    <option value="2955">ANDROSTENEDIONE @ 1900</option>
+                    <option value="2956">
+                      ANGIOTENSIN CONVERTING ENZYME (ACE) @ 1300
+                    </option>
+                    <option value="2957">
+                      ANTENATAL HEALTH PROFILE @ 4000
+                    </option>
+                    <option value="2958">
+                      ANTI - DS DNA ANTIBODY, SERUM @ 1200
+                    </option>
+                    <option value="2959">ANTI - HBS [CMIA] @ 900</option>
+                    <option value="2960">
+                      ANTI AMA -M2 (IgG) ANTIBODIES @ 1900
+                    </option>
+                    <option value="2961">
+                      ANTI CYCLIC CITRULLINATED PEPTIDE @ 1900
+                    </option>
+                    <option value="2962">ANTI HBE [CMIA] @ 900</option>
+                    <option value="2963">
+                      ANTI HEPATITIS E VIRUS, IGM @ 1700
+                    </option>
+                    <option value="2964">
+                      ANTI LIVER KIDNEY MICROSOMES ANTIBODIES @ 4200
+                    </option>
+                    <option value="2965">
+                      ANTI MITOCHONDRIAL ANTIBODY @ 3000
+                    </option>
+                    <option value="2966">ANTI MULLERIAN HORMONE @ 2300</option>
+                    <option value="2967">
+                      ANTI NEUTROPHILIC CYTOPLASMIC ANTIBODY (IMMUNOFLUROSCENCE
+                      + LINE BLOT ASSAY) @ 2500
+                    </option>
+                    <option value="2968">
+                      ANTI NUCLEAR ANTIBODY( IMMUNOFLUORESCENT) @ 2000
+                    </option>
+                    <option value="2969">
+                      ANTI NUCLEOSOMES ANTIBODIES (IgG) @ 2000
+                    </option>
+                    <option value="2970">
+                      ANTI PROLIFERATING CELL NUCLEAR ANTIGEN ANTIBODIES(IgG) @
+                      2000
+                    </option>
+                    <option value="2971">
+                      ANTI RIBOSOMAL P- PROTIENS (IgG) @ 2000
+                    </option>
+                    <option value="2972">
+                      ANTI Ro-52 ANTIBODIES (IgG) @ 2000
+                    </option>
+                    <option value="2973">
+                      Anti Saccharomyces cerevisiae antibodies(Indirect
+                      Immunofluorescence Method) @ 7000
+                    </option>
+                    <option value="2974">
+                      Anti Sm ANTIBODIES( IgG) @ 2000
+                    </option>
+                    <option value="2975">
+                      ANTI Sm/ nRNP ANTIBODIES @ 2000
+                    </option>
+                    <option value="2976">
+                      ANTI SMOOTH MUSCLE ANTIBODY @ 2200
+                    </option>
+                    <option value="2977">
+                      ANTI SPERM ANTIBODY (SERUM) @ 1000
+                    </option>
+                    <option value="2978">
+                      ANTI SS-A ANTIBODIES / RO-52(IgG) @ 2000
+                    </option>
+                    <option value="2979">
+                      ANTI THYROGLOBULIN ANTIBODIES (TGA) @ 1400
+                    </option>
+                    <option value="2980">
+                      ANTI THYROID PEROXIDASE (TPO) @ 1350
+                    </option>
+                    <option value="2981">
+                      ANTI TISSUE TRANSGLUTAMINASE ANTIBODY AND IGA @ 1700
+                    </option>
+                    <option value="2982">
+                      ANTI- CENTROMERE ANTIBODIES @ 2000
+                    </option>
+                    <option value="2983">
+                      ANTI- HISTONES ANTIBODIES (IgG) @ 2000
+                    </option>
+                    <option value="2984">
+                      ANTI- SS-B / La ANTIBODIES (IgG) @ 2000
+                    </option>
+                    <option value="2985">ANTI-HAV IgM [ECLIA] @ 1200</option>
+                    <option value="2986">ANTI-HB CORE IgM (ELFA) @ 1100</option>
+                    <option value="2987">
+                      ANTI-HCV [ III GENERATION - CMIA] @ 1500
+                    </option>
+                    <option value="2988">
+                      ANTI-HELICOBACTER PYLORI @ 1500
+                    </option>
+                    <option value="2989">
+                      ANTI-Jo-1 ANTIBODIES(IgG) @ 2000
+                    </option>
+                    <option value="2990">
+                      ANTI-PM- Scl ANTIBODIES (IgG) @ 2000
+                    </option>
+                    <option value="2991">
+                      ANTI-Scl-70 ANTIBODIES (IgG) (DNA TOPOISOMERASE) @ 2000
+                    </option>
+                    <option value="2992">
+                      ANTI-TISSUE TRANSGLUTAMINASE ANTIBODY (IGA) @ 1400
+                    </option>
+                    <option value="2993">
+                      ANTI-VARICELLA ZOSTER VIRUS (CLIA) @ 1800
+                    </option>
+                    <option value="2994">
+                      ANTIBODY TO HEPATITIS A VIRUS (ANTI-HAV) @ 1500
+                    </option>
+                    <option value="2995">
+                      ANTIBODY TO HIV I &amp; II and HIV-1 p24 antigen @ 700
+                    </option>
+                    <option value="2996">
+                      ANTITHROMBIN III, CITRATED BLOOD @ 4000
+                    </option>
+                    <option value="2997">APLA PANEL @ 7300</option>
+                    <option value="2998">
+                      APOLIPOPROTEIN, SERUM (IMMUNOTURBIDIMETRY) @ 800
+                    </option>
+                    <option value="2999">
+                      ARTHRITIS AND COMPREHENSIVE HEALTH PROFILE @ 17600
+                    </option>
+                    <option value="3000">
+                      ARTHRITIS AND SMAC PROFILE @ 10400
+                    </option>
+                    <option value="3001">
+                      ARTHRITIS AND VITAMIN MINERAL PROFILE @ 11600
+                    </option>
+                    <option value="3002">ARTHRITIS PROFILE @ 7500</option>
+                    <option value="3003">
+                      ARYA BHAVAN ADVANCED HEALTH CHECK WITH VITAMINS @ 4490
+                    </option>
+                    <option value="3004">
+                      ARYA BHAVAN ADVANCED HEALTH CHECK @ 2900
+                    </option>
+                    <option value="3005">
+                      ASO ( QUANTITATIVE TITRE) @ 700
+                    </option>
+                    <option value="3006">
+                      ASPERGILLUS FUMIGATUS IGG @ 1900
+                    </option>
+                    <option value="3007">
+                      AUTO ANTIBODIES AGAINST ENDOMYSIUM AND DEAMIDATED GLIADIN
+                      PEPTIDE (INDIRECT IMMUNOFLUORESCENCE TEST) @ 2300
+                    </option>
+                    <option value="3008">
+                      AUTOIMMUNE LIVER PROFILE @ 6000
+                    </option>
+                    <option value="3009">
+                      BACT / ALERT CULTURE AND SENSITIVITY (PROVISIONAL) @ 1100
+                    </option>
+                    <option value="3010">
+                      BACTERIOPHAGE SUSCEPTIBILITY REPORT @ 850
+                    </option>
+                    <option value="3011">
+                      BCR-ABL QUALITATIVE (RT-PCR) @ 4100
+                    </option>
+                    <option value="3012">
+                      BETA 2 GLYCOPROTEIN 1 IGG / IGM, SERUM (EIA) @ 3900
+                    </option>
+                    <option value="3013">
+                      Beta 2- MICROGLOBULIN [IMMUNOTURBIDIMETRIC] @ 1600
+                    </option>
+                    <option value="3014">
+                      BETA HCG (TRIPLE TEST) (ECLIA) @ 750
+                    </option>
+                    <option value="3015">BETA HCG [ECLIA] @ 800</option>
+                    <option value="3016">BILIRUBIN @ 300</option>
+                    <option value="3017">BLEEDING TIME @ 300</option>
+                    <option value="3018">BLOOD FOR SICKLING @ 300</option>
+                    <option value="3019">
+                      BLOOD FUNGAL CULTURE AND SENSITIVITY @ 1400
+                    </option>
+                    <option value="3020">BLOOD GLUCOSE (FASTING) @ 100</option>
+                    <option value="3021">
+                      BLOOD GLUCOSE (POST-PRANDIAL) @ 100
+                    </option>
+                    <option value="3022">BLOOD GROUP - RH FACTOR @ 300</option>
+                    <option value="3023">BLOOD PICTURE @ 300</option>
+                    <option value="3024">BLOOD PRESSURE READINGS @ 50</option>
+                    <option value="3025">BONE MARROW BIOPSY @ 1450</option>
+                    <option value="3026">
+                      BONE MARROW ASPIRATE (REVIEW) @ 2000
+                    </option>
+                    <option value="3027">
+                      BONE MARROW BIOPSY (REVIEW) @ 2000
+                    </option>
+                    <option value="3028">BONE PANEL STUDY AIIMS @ 623</option>
+                    <option value="3029">
+                      BORDETELLA PERTUSSIS IGG, SERUM @ 2000
+                    </option>
+                    <option value="3030">
+                      BRUCELLA AGGLUTINATION TEST @ 300
+                    </option>
+                    <option value="3031">C-PEPTIDE @ 1200</option>
+                    <option value="3032">
+                      C-REACTIVE PROTEINS-QUANTITATIVE (HIGH SENSITIVITY) @ 850
+                    </option>
+                    <option value="3033">C.P.K. @ 400</option>
+                    <option value="3034">C.P.K. (MB) @ 500</option>
+                    <option value="3035">C.S.F. IgA @ 500</option>
+                    <option value="3036">C.S.F. IgG @ 500</option>
+                    <option value="3037">C.S.F. IgM @ 500</option>
+                    <option value="3038">CA - 125 @ 1300</option>
+                    <option value="3039">CA - 19.9 [ECLIA] @ 1400</option>
+                    <option value="3040">CA -15.3 @ 1400</option>
+                    <option value="3041">CA 72.4 @ 1800</option>
+                    <option value="3042">CALCIUM @ 300</option>
+                    <option value="3043">CALCIUM/CREATININE RATIO @ 600</option>
+                    <option value="3044">CANCER MARKER FEMALE @ 10100</option>
+                    <option value="3045">
+                      CANCER MARKER FEMALE WITHOUT CBC @ 9500
+                    </option>
+                    <option value="3046">CANCER MARKER MALE @ 7100</option>
+                    <option value="3047">
+                      CANCER MARKER MALE WITHOUT CBC @ 6500
+                    </option>
+                    <option value="3048">
+                      CARBAMAZEPINE / TEGRETOL [FPIA] @ 900
+                    </option>
+                    <option value="3049">
+                      CARCINO EMBRYONIC ANTIGEN @ 900
+                    </option>
+                    <option value="3050">CARDIAC PROFILE @ 2850</option>
+                    <option value="3051">
+                      CARDIOLIPIN ANTIBODIES IGG @ 1700
+                    </option>
+                    <option value="3052">
+                      CARDIOLIPIN ANTIBODIES IGM @ 1700
+                    </option>
+                    <option value="3053">
+                      CATHETER TIP CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3054">CC1 @ 2800</option>
+                    <option value="3055">CC1+PHADIATOP @ 4600</option>
+                    <option value="3056">CC2 @ 8900</option>
+                    <option value="3057">CC2+PHADIATOP @ 10400</option>
+                    <option value="3058">CELLOPHANE TAPE TEST @ 300</option>
+                    <option value="3059">
+                      CELLOPHANE TAPE TEST FOR PINWORM @ 300
+                    </option>
+                    <option value="3060">
+                      CENTER FOR DIETARY COUNSELLING (IMUPRO SCREEN 22) @ 8000
+                    </option>
+                    <option value="3061">CERVICAL SCREEN PANEL @ 3200</option>
+                    <option value="3062">
+                      CERVICAL SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3063">CHIKUNGUNYA - RT-PCR @ 2500</option>
+                    <option value="3064">CHIKUNGUNYA IGG ELISA @ 500</option>
+                    <option value="3065">
+                      CHIKUNGUNYA IgM ANTIBODY @ 1950
+                    </option>
+                    <option value="3066">
+                      CHIKV SCREENING PANEL -A @ 12000
+                    </option>
+                    <option value="3067">
+                      CHIKV SCREENING PANEL -B @ 7000
+                    </option>
+                    <option value="3068">
+                      CHLAMYDIA TRACHOMATIS, QUALITATIVE (RT PCR) @ 7000
+                    </option>
+                    <option value="3069">CHLORIDE @ 300</option>
+                    <option value="3070">CHOLESTEROL @ 250</option>
+                    <option value="3071">
+                      CLOSTRIDIUM DIFFICILE (RT- PCR) @ 5000
+                    </option>
+                    <option value="3072">CLOTTING TIME @ 300</option>
+                    <option value="3073">COAGULATION PROFILE @ 1700</option>
+                    <option value="3074">COMPLEMENT C3 @ 800</option>
+                    <option value="3075">COMPLEMENT C4 @ 800</option>
+                    <option value="3076">COMPLETE BLOOD COUNT @ 600</option>
+                    <option value="3077">COMPLETE BLOOD COUNT @ 600</option>
+                    <option value="3078">
+                      COMPREHENSIVE ANEMIA PROFILE @ 4000
+                    </option>
+                    <option value="3079">
+                      COMPREHENSIVE ANEMIA PROFILE @ 5000
+                    </option>
+                    <option value="3080">
+                      COMPREHENSIVE GUT HEALTH @ 34900
+                    </option>
+                    <option value="3081">
+                      COMPREHENSIVE HEALTH CHECK CHILD @ 9000
+                    </option>
+                    <option value="3082">
+                      COMPREHENSIVE HEALTH CHECK SENIOR CITIZEN FEMALE @ 16000
+                    </option>
+                    <option value="3083">
+                      COMPREHENSIVE HEALTH CHECK SENIOR CITIZEN MALE @ 17000
+                    </option>
+                    <option value="3084">
+                      COMPREHENSIVE HEALTH PROFILE FASTING @ 14000
+                    </option>
+                    <option value="3085">
+                      COMPREHENSIVE HEALTH PROFILE FASTING WITH PSA @ 15500
+                    </option>
+                    <option value="3086">
+                      COMPREHENSIVE HEALTH PROFILE RANDOM @ 14000
+                    </option>
+                    <option value="3087">
+                      COMPREHENSIVE HEALTH PROFILE RANDOM VIRAL MARKER WITH PSA
+                      @ 18000
+                    </option>
+                    <option value="3088">
+                      COMPREHENSIVE HEALTH PROFILE RANDOM WITH PSA @ 15500
+                    </option>
+                    <option value="3089">
+                      COMPREHENSIVE HEALTH PROFILE RANDOM WITH VIRAL MARKER @
+                      16500
+                    </option>
+                    <option value="3090">
+                      COMPREHENSIVE HEALTH PROFILE WITH PSA &amp; VIRAL MARKER @
+                      18000
+                    </option>
+                    <option value="3091">
+                      COMPREHENSIVE HEALTH PROFILE WITH VIRAL MARKER @ 16500
+                    </option>
+                    <option value="3092">
+                      COMPREHENSIVE STOOL EXAMINATION @ 21900
+                    </option>
+                    <option value="3093">
+                      CONGENITAL ADRENAL HYPERPLASIA @ 5690
+                    </option>
+                    <option value="3094">COOMBS' TEST - (DIRECT) @ 700</option>
+                    <option value="3095">
+                      COOMBS' TEST - (INDIRECT) @ 700
+                    </option>
+                    <option value="3096">
+                      COVID-19 VIRUS QUALITATIVE RTPCR @ 2400
+                    </option>
+                    <option value="3097">CREATININE, SERUM @ 250</option>
+                    <option value="3098">CREATININE, URINE @ 400</option>
+                    <option value="3099">CRYPTOSPORIDIUM ANTIGEN @ 2200</option>
+                    <option value="3100">CRYSTAL @ 500</option>
+                    <option value="3101">
+                      CSF INDIA INK PREPARATION @ 300
+                    </option>
+                    <option value="3102">
+                      CSF INDIA INK PREPARATION @ 500
+                    </option>
+                    <option value="3103">
+                      CSF PROTEIN ELECTROPHORESIS @ 4000
+                    </option>
+                    <option value="3104">
+                      CT/NG ( Real Time PCR Test ) @ 5000
+                    </option>
+                    <option value="3105">CULTURE AND SENSITIVITY @ 850</option>
+                    <option value="3106">CULTURE FOR AFB @ 1500</option>
+                    <option value="3107">CULTURE FOR FUNGUS @ 1600</option>
+                    <option value="3108">
+                      CULTURE INFECTION CONTROL @ 700
+                    </option>
+                    <option value="3109">CUREMYDIABETES PACK1 @ 5900</option>
+                    <option value="3110">CUREMYDIABETES PACK2 @ 7400</option>
+                    <option value="3111">CUREMYDIABETES PACK3 @ 2900</option>
+                    <option value="3112">CUREMYDIABETES PACK4 @ 6900</option>
+                    <option value="3113">
+                      CURETTINGS BONE CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3114">CYTOLOGY @ 700</option>
+                    <option value="3115">D-DIMER (QUANTITATIVE) @ 1400</option>
+                    <option value="3116">D.H.E.A. SULPHATE @ 1000</option>
+                    <option value="3117">
+                      DENGUE NS1 ANTIGEN (ELISA) @ 1600
+                    </option>
+                    <option value="3118">DENGUE RT-PCR, Serum @ 7000</option>
+                    <option value="3119">DENGUE SEROLOGY PROFILE @ 3600</option>
+                    <option value="3120">
+                      DENGUE VIRUS ANTIBODY , IGG @ 1000
+                    </option>
+                    <option value="3121">
+                      DENGUE VIRUS ANTIBODY, IGM @ 1000
+                    </option>
+                    <option value="3122">DHI PANEL @ 2750</option>
+                    <option value="3123">DIABETES MELLITUS @ 11500</option>
+                    <option value="3124">DIABETES PROFILE @ 2400</option>
+                    <option value="3125">
+                      DIABETES/HYPERTENSION PROFILE @ 3400
+                    </option>
+                    <option value="3126">
+                      DIETARY COUNSELLING PANEL @ 14900
+                    </option>
+                    <option value="3127">
+                      DIETARY COUNSELLING PANEL II @ 10900
+                    </option>
+                    <option value="3128">
+                      DIETARY COUNSELLING PANEL III @ 5900
+                    </option>
+                    <option value="3129">
+                      DIETARY COUNSELLING PANEL IV @ 10000
+                    </option>
+                    <option value="3130">
+                      DIFFERENTIAL LEUCOCYTE COUNT @ 300
+                    </option>
+                    <option value="3131">
+                      DIHYDROTESTOSTERONE (ELISA) @ 2800
+                    </option>
+                    <option value="3132">
+                      DILANTIN/PHENYTOIN/EPTOIN [CMIA] @ 1000
+                    </option>
+                    <option value="3133">DIPHTHERIA IGG, SERUM @ 2000</option>
+                    <option value="3134">
+                      DNA PROBE ANALYSIS FOR VAGINAL PATHOGENS @ 1500
+                    </option>
+                    <option value="3135">
+                      DOUBLE -STRANDED DNA ANTIBODIES (ds- DNA) @ 1900
+                    </option>
+                    <option value="3136">
+                      DR KUBBA SKIN CLINIC PANEL @ 15900
+                    </option>
+                    <option value="3137">DRUG ASSAY @ 3000</option>
+                    <option value="3138">
+                      E.S.R. (WESTERGREN AUTOMATED) @ 300
+                    </option>
+                    <option value="3139">
+                      EBV-PROFILE (INDIRECT IMMUNOFLORESCENT METHOD) @ 2000
+                    </option>
+                    <option value="3140">EGFR @ 350</option>
+                    <option value="3141">ELECTROLYTES @ 500</option>
+                    <option value="3142">EMPLOYEE HEALTH CHECK 1 @ 3000</option>
+                    <option value="3143">EMPLOYEE HEALTH CHECK 2 @ 2200</option>
+                    <option value="3144">
+                      EMPLOYEE HEALTH CHECK-UP FRENCH EMBASSY @ 1990
+                    </option>
+                    <option value="3145">
+                      ERYTHROCYTE SEDIMENTATION RATE @ 300
+                    </option>
+                    <option value="3146">ERYTHROPOIETIN (EPO) @ 2200</option>
+                    <option value="3147">ESTRADIOL [E2] @ 1000</option>
+                    <option value="3148">EXPANDED ANEMIA PROFILE @ 7500</option>
+                    <option value="3149">EXTENDED GUT HEALTH @ 26900</option>
+                    <option value="3150">
+                      EXTENDED GUT HEALTH WITH BIOFIRE @ 35600
+                    </option>
+                    <option value="3151">
+                      EXTENDED STOOL EXAMINATION @ 14900
+                    </option>
+                    <option value="3152">
+                      EXTENDED THROMBOPHILIA PROFILE @ 29900
+                    </option>
+                    <option value="3153">
+                      EXTRACTABLE NUCLEAR ANTIGENS ( ENA ) PROFILE @ 7000
+                    </option>
+                    <option value="3154">
+                      FACTOR V (LEIDEN) GENE MUTATION @ 7500
+                    </option>
+                    <option value="3155">FAECAL CALPROTECTIN @ 4500</option>
+                    <option value="3156">FATIGUE PANEL @ 10000</option>
+                    <option value="3157">FEMALE HORMONE PROFILE @ 7500</option>
+                    <option value="3158">FEMALE HORMONE PROFILE @ 7500</option>
+                    <option value="3159">FERRITIN @ 850</option>
+                    <option value="3160">FEVER PANEL ADVANCE @ 7900</option>
+                    <option value="3161">FEVER PANEL ADVANCE @ 11500</option>
+                    <option value="3162">FEVER PANEL BASIC @ 4900</option>
+                    <option value="3163">
+                      FILARIAL ANTIBODY (IGG/IGM) @ 1400
+                    </option>
+                    <option value="3164">
+                      FINE NEEDLE ASPIRATION CYTOLOGY @ 500
+                    </option>
+                    <option value="3165">
+                      FINE NEEDLE ASPIRATION CYTOLOGY @ 1500
+                    </option>
+                    <option value="3166">
+                      FIRST TRIMESTER SCREENING TEST @ 4000
+                    </option>
+                    <option value="3167">FITNESS PROFILE @ 6500</option>
+                    <option value="3168">
+                      FITNESS PROFILE WITH TESTO FREE + TOTAL @ 8500
+                    </option>
+                    <option value="3169">FLUID REPORT @ 1000</option>
+                    <option value="3170">FLUIDS FOR COUNT @ 300</option>
+                    <option value="3171">FOLIC ACID @ 1200</option>
+                    <option value="3172">
+                      FOLLICLE STIMULATING HORMONE @ 700
+                    </option>
+                    <option value="3173">FREE ANDROGEN INDEX @ 3400</option>
+                    <option value="3175">FREE ESTRIOL TRIPLE TEST @ 550</option>
+                    <option value="3174">FREE ESTRIOL [E3] @ 1200</option>
+                    <option value="3176">
+                      FREE PROSTATIC SPECIFIC ANTIGEN @ 900
+                    </option>
+                    <option value="3177">
+                      FREE TESTOSTERONE CORTISOL RATIO @ 2600
+                    </option>
+                    <option value="3178">
+                      FREE THYROXINE [FT4] {ECLIA} @ 450
+                    </option>
+                    <option value="3179">
+                      FREE TRIIODOTHYRONINE [FT3] {ECLIA} @ 450
+                    </option>
+                    <option value="3180">FRUCTOSAMINE @ 800</option>
+                    <option value="3181">FT3 &amp; FT4 TEST @ 900</option>
+                    <option value="3182">FT3 &amp; TSH @ 900</option>
+                    <option value="3183">FT4 &amp; TSH @ 900</option>
+                    <option value="3184">
+                      FUNGUS IDENTIFICATION AND SENSITIVITY @ 2000
+                    </option>
+                    <option value="3185">
+                      FV-PTH-MTHFR MUTATION ANALYSIS @ 10000
+                    </option>
+                    <option value="3186">G.G.T.P. @ 400</option>
+                    <option value="3187">
+                      GASTROINTESTINAL (GI) PANEL (FILM ARRAY-MULTIPLEX PCR) @
+                      15900
+                    </option>
+                    <option value="3188">
+                      GENE XPERT BCR-ABL (RT-PCR), QUANTITATIVE @ 12000
+                    </option>
+                    <option value="3189">
+                      GENE XPERT MTB / RIF ULTRA ASSAY (RT-PCR) @ 2200
+                    </option>
+                    <option value="3190">
+                      GENE XPERT MTB / RIF ULTRA ASSAY (RT-PCR), SPUTUM @ 2200
+                    </option>
+                    <option value="3191">
+                      GENERAL BODY PANEL 1 (DR MANKUL GOYAL) @ 14500
+                    </option>
+                    <option value="3192">GIEMSA STAIN @ 400</option>
+                    <option value="3193">
+                      GLUCOSE (NASAL SECRETIONS) @ 100
+                    </option>
+                    <option value="3194">GLUCOSE (RANDOM) @ 100</option>
+                    <option value="3195">
+                      GLUCOSE 6 PHOSPHODEHYDROGENASE (QUANTITATIVE) @ 800
+                    </option>
+                    <option value="3196">GLUCOSE RANDOM @ 100</option>
+                    <option value="3197">GLUCOSE TOLERANCE TEST @ 500</option>
+                    <option value="3198">
+                      GLUCOSE TOLERANCE TEST (AFTER 100 G) @ 600
+                    </option>
+                    <option value="3199">
+                      GLUCOSE TOLERANCE TEST (AFTER 100 G-EXTENDED) @ 600
+                    </option>
+                    <option value="3200">
+                      GLUCOSE TOLERANCE TEST (AFTER 75 G) @ 600
+                    </option>
+                    <option value="3201">
+                      GLUCOSE TOLERANCE TEST (AFTER 75 G-EXTENDED) @ 600
+                    </option>
+                    <option value="3202">
+                      GLUTAMIC ACID DECARBOXYLASE ANTIBODIES (GAD 65), SERUM @
+                      6900
+                    </option>
+                    <option value="3203">
+                      GLYCOSYLATED HAEMOGLOBIN [HBA1C] @ 700
+                    </option>
+                    <option value="3204">GRAM STAIN EXAMINATION @ 400</option>
+                    <option value="3205">GROWTH PANEL @ 6900</option>
+                    <option value="3206">GURDWARA GP PANEL @ 2500</option>
+                    <option value="3207">GURUDWARA GP D3+B12 @ 2000</option>
+                    <option value="3208">GYNAE HEALTH PANEL @ 15900</option>
+                    <option value="3209">H.D.L. CHOLESTEROL @ 350</option>
+                    <option value="3210">HAEMOGLOBIN @ 200</option>
+                    <option value="3211">HAEMOGLOBIN A2 @ 350</option>
+                    <option value="3212">HAEMOGRAM @ 500</option>
+                    <option value="3213">
+                      HAIN’S LINE PROBE ASSAY: MYCOBACTERIUM TUBERCULOSIS FIRST
+                      LINE DRUG RESISTANCE PROFILE @ 1800
+                    </option>
+                    <option value="3214">
+                      HAIN’S LINE PROBE ASSAY: MYCOBACTERIUM TUBERCULOSIS SECOND
+                      LINE DRUG RESISTANCE PROFILE @ 6500
+                    </option>
+                    <option value="3215">HBe Ag [ELFA] @ 1000</option>
+                    <option value="3216">HBsAg [CMIA] @ 700</option>
+                    <option value="3217">
+                      HE4 (HUMAN EPIDIDYMIS PROTEIN 4) @ 2500
+                    </option>
+                    <option value="3218">
+                      HEALTHCARE ENVIRONMENT MICROBIAL MONITORING @ 915
+                    </option>
+                    <option value="3219">
+                      HELICOBACTER PYLORI STOOL ANTIGEN DETECTION @ 2200
+                    </option>
+                    <option value="3220">
+                      HELICOBACTER PYLORI STOOL ANTIGEN DETECTION @ 2200
+                    </option>
+                    <option value="3221">
+                      HEPATITIS B CORE ANTIBODY (ANTI-HBC) TOTAL @ 1400
+                    </option>
+                    <option value="3222">
+                      HEPATITIS B SURFACE ANTIGEN (HBSAG) QUANTITATIVE, SERUM @
+                      1300
+                    </option>
+                    <option value="3223">
+                      HIGH PERFORMANCE LIQUID CHROMATOGRAPHY, EDTA WHOLE BLOOD @
+                      1150
+                    </option>
+                    <option value="3224">
+                      HISTOPATHOLOGICAL EXAMINATION ( SMALL) @ 1500
+                    </option>
+                    <option value="3225">
+                      HISTOPATHOLOGICAL EXAMINATION (LARGE) @ 4500
+                    </option>
+                    <option value="3226">
+                      HISTOPATHOLOGICAL EXAMINATION RKM (LARGE) @ 800
+                    </option>
+                    <option value="3227">
+                      HISTOPATHOLOGICAL EXAMINATION RKM (SMALL) @ 500
+                    </option>
+                    <option value="3228">HLA B27 RT-PCR @ 3200</option>
+                    <option value="3229">
+                      HOMA IR (INSULIN RESISTANCE INDEX) @ 950
+                    </option>
+                    <option value="3230">HOMOCYSTEINE @ 1100</option>
+                    <option value="3231">
+                      HORMONE PROFILE PANEL 2 (DR MANKUL GOYAL) @ 7500
+                    </option>
+                    <option value="3232">
+                      HPV DNA GENOTYPING, RTPCR @ 3600
+                    </option>
+                    <option value="3233">HUMAN GROWTH HORMONE @ 900</option>
+                    <option value="3234">IgA @ 900</option>
+                    <option value="3235">IgE [ECLIA] @ 900</option>
+                    <option value="3236">IgG @ 700</option>
+                    <option value="3237">
+                      IgG ANTIBODIES TO HERPES SIMPLEX VIRUS 1&amp;2 [CLIA] @
+                      800
+                    </option>
+                    <option value="3238">
+                      IGG ANTIBODIES TO HSV-TYPE 2 [CLIA] @ 800
+                    </option>
+                    <option value="3239">
+                      IgG ANTIBODIES TO MEASLES VIRUS(CLIA) @ 1700
+                    </option>
+                    <option value="3240">
+                      IgG ANTIBODIES TO MUMPS VIRUS [CLIA] @ 1700
+                    </option>
+                    <option value="3241">
+                      IGG TO CYTOMEGALO VIRUS [ELFA] @ 800
+                    </option>
+                    <option value="3242">
+                      IgG TO RUBELLA VIRUS [CMIA] @ 800
+                    </option>
+                    <option value="3243">
+                      IgG TO TOXOPLASMA GONDII [CMIA] @ 800
+                    </option>
+                    <option value="3244">IgM @ 700</option>
+                    <option value="3245">
+                      IgM ANTIBODIES TO HERPES SIMPLEX VIRUS 1&amp;2 [CLIA] @
+                      800
+                    </option>
+                    <option value="3246">
+                      IGM ANTIBODIES TO HSV-TYPE 2 [ELISA] @ 800
+                    </option>
+                    <option value="3247">
+                      IGM TO CYTOMEGALO VIRUS [ELFA] @ 800
+                    </option>
+                    <option value="3248">
+                      IgM TO RUBELLA VIRUS [ELFA] @ 800
+                    </option>
+                    <option value="3249">
+                      IgM TO TOXOPLASMA GONDII [CMIA] @ 800
+                    </option>
+                    <option value="3250">IMUPRO BASIC 180 @ 35000</option>
+                    <option value="3251">IMUPRO BASIC 90 @ 25000</option>
+                    <option value="3252">IMUPRO COMPLETE 270 @ 43500</option>
+                    <option value="3253">IMUPRO SCREEN 22 @ 10000</option>
+                    <option value="3254">
+                      IMUPRO SCREEN 22 WITH ACTIVE B-12 @ 10000
+                    </option>
+                    <option value="3255">IMUPRO SCREEN 44 @ 15000</option>
+                    <option value="3256">
+                      IMUPRO VEGETARIAN DIET (90) @ 25000
+                    </option>
+                    <option value="3257">INFLAMMATION PANEL 1 @ 3900</option>
+                    <option value="3258">INFLAMMATION PANEL 2 @ 6500</option>
+                    <option value="3259">
+                      Influenza A and B viral antigen test @ 1500
+                    </option>
+                    <option value="3260">INFLUENZA RTPCR @ 4500</option>
+                    <option value="3261">INHIBIN A @ 1200</option>
+                    <option value="3262">INSULIN @ 900</option>
+                    <option value="3263">INSULIN (1 HOUR) @ 900</option>
+                    <option value="3264">
+                      INSULIN [ECLIA] (FASTING) @ 900
+                    </option>
+                    <option value="3265">
+                      INSULIN [ECLIA]( POSTPRANDIAL) @ 900
+                    </option>
+                    <option value="3266">
+                      INSULIN- LIKE GROWTH FACTOR BINDING PROTEIN-3 @ 4000
+                    </option>
+                    <option value="3267">
+                      INSULIN-LIKE GROWTH FACTOR 1 @ 2900
+                    </option>
+                    <option value="3268">
+                      INTERLEUKIN-6 (IL-6) LEVELS, SERUM @ 3200
+                    </option>
+                    <option value="3269">IRON PROFILE @ 1400</option>
+                    <option value="3270">
+                      JAK 2 (V617F), GENE MUTATION, RT PCR, QUALITATIVE @ 7500
+                    </option>
+                    <option value="3271">KIDNEY FUNCTION TEST @ 1300</option>
+                    <option value="3272">KIDNEY FUNCTION TEST @ 1300</option>
+                    <option value="3273">KIDNEY FUNCTION TEST @ 1300</option>
+                    <option value="3274">KIDNEY FUNCTION TEST @ 600</option>
+                    <option value="3275">
+                      KOH PREPARATION FOR FUNGUS @ 600
+                    </option>
+                    <option value="3276">L.D.H. @ 450</option>
+                    <option value="3277">L.D.L. CHOLESTEROL @ 450</option>
+                    <option value="3278">L.E. CELL PHENOMENON @ 500</option>
+                    <option value="3279">LDH FLUID @ 450</option>
+                    <option value="3280">
+                      LEFT EAR SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3281">
+                      LEFT EYE SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3282">
+                      LEFT NASAL SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3283">LEPTOSPIRA IGM @ 1800</option>
+                    <option value="3284">LIPASE @ 700</option>
+                    <option value="3285">LIPASE NITRD @ 500</option>
+                    <option value="3286">LIPASE, FLUID @ 700</option>
+                    <option value="3287">LIPID PROFILE @ 1000</option>
+                    <option value="3288">LIPID Profile @ 1000</option>
+                    <option value="3289">
+                      LIPID PROFILE [EXTENDED] @ 2800
+                    </option>
+                    <option value="3290">LIPOPROTEIN [a] @ 1000</option>
+                    <option value="3291">LITHIUM (I.S.E) @ 500</option>
+                    <option value="3292">LIVER FUNCTION TEST @ 900</option>
+                    <option value="3293">LIVER FUNCTION TEST @ 700</option>
+                    <option value="3294">LIVER FUNCTION TEST @ 900</option>
+                    <option value="3295">
+                      LOWER RESPIRATORY PANEL @ 22900
+                    </option>
+                    <option value="3296">
+                      LUPUS ANTICOAGULANT DETECTION TEST @ 3000
+                    </option>
+                    <option value="3297">LUTEINISING HORMONE @ 700</option>
+                    <option value="3298">MAGNESIUM @ 500</option>
+                    <option value="3299">MAGNESIUM NITRD @ 400</option>
+                    <option value="3300">MAGNESIUM SERUM @ 500</option>
+                    <option value="3301">MALARIA PROFILE @ 400</option>
+                    <option value="3302">MALARIAL PARASITE @ 300</option>
+                    <option value="3303">
+                      MALARIAL PARASITE LDH TEST @ 400
+                    </option>
+                    <option value="3304">MANTOUX TEST @ 400</option>
+                    <option value="3305">
+                      MCH (MEAN CORPUSCULAR HB) @ 300
+                    </option>
+                    <option value="3306">
+                      MCHC (MEAN CORPUSCULAR HB CONC) @ 300
+                    </option>
+                    <option value="3307">
+                      MCV (MEAN CORPUSCULAR VOLUME) @ 300
+                    </option>
+                    <option value="3308">
+                      MENINGITIS / ENCEPHALITIS (ME) PANEL (FILM ARRAY-MULTIPLEX
+                      PCR) @ 15500
+                    </option>
+                    <option value="3309">
+                      MICROALBUMINURIA ( 24 hrs) @ 700
+                    </option>
+                    <option value="3310">MICROALBUMINURIA (URINE) @ 600</option>
+                    <option value="3311">
+                      MINIMAL RESIDUAL DISEASE (MRD) @ 16000
+                    </option>
+                    <option value="3312">
+                      MODIFIED ZN STAIN (STOOL) @ 300
+                    </option>
+                    <option value="3313">MONO SPOT TEST @ 700</option>
+                    <option value="3314">
+                      MPO/PR3/GBM (LINE BLOT ASSAY) @ 2500
+                    </option>
+                    <option value="3315">MRSA SCREENING @ 700</option>
+                    <option value="3316">
+                      MTHFR (METHYLTETRAHYDROFOLATE REDUCTASE) C677T, GENE
+                      POLYMORPHISM @ 7500
+                    </option>
+                    <option value="3317">
+                      MYCOBACTERIUM SPECIATION @ 6500
+                    </option>
+                    <option value="3318">MYELOMA ADNANCED PANEL @ 14200</option>
+                    <option value="3319">
+                      MYELOMA ADVANCED PANEL WITH IF ELPRS @ 19950
+                    </option>
+                    <option value="3320">MYELOMA BASIC PANEL @ 5370</option>
+                    <option value="3321">
+                      N-TERMINAL proB-TYPE NATRIURETIC PEPTIDE (proBNPII), ECLIA
+                      @ 3600
+                    </option>
+                    <option value="3322">
+                      NASAL SWAB GRAM STAIN EXAMINATION @ 300
+                    </option>
+                    <option value="3323">
+                      NEISSERIA GONORRHOEAE, QUALITATIVE (RT PCR) @ 7000
+                    </option>
+                    <option value="3324">NEURO SPOT PLUS @ 45000</option>
+                    <option value="3325">P.T.T.K., CITRATED BLOOD @ 600</option>
+                    <option value="3326">P/S FOR MICROFILARIA @ 500</option>
+                    <option value="3327">PACKED CELL VOLUME @ 300</option>
+                    <option value="3328">PANCREATIC ALFA AMYLASE @ 500</option>
+                    <option value="3329">PAP SMEAR (CONVENTIONAL) @ 600</option>
+                    <option value="3330">
+                      PAP SMEAR (LIQUID BASED CYTOLOGY) @ 1200
+                    </option>
+                    <option value="3331">
+                      PARATHYROID HORMONE (INTACT) (ECLIA) @ 1700
+                    </option>
+                    <option value="3332">PCOD @ 9000</option>
+                    <option value="3333">PCOS @ 11000</option>
+                    <option value="3334">PHENOBARBITONE LEVEL @ 1000</option>
+                    <option value="3335">PHLEBOTOMY CHARGES @ 2500</option>
+                    <option value="3336">PHOSPHORUS @ 300</option>
+                    <option value="3337">PLASMA AMMONIA @ 1000</option>
+                    <option value="3338">PLATELET COUNT @ 300</option>
+                    <option value="3339">PLATELET COUNT @ 300</option>
+                    <option value="3340">
+                      PNEUMONIA PANEL (FILM ARRAY-MULTIPLEX PCR) @ 19900
+                    </option>
+                    <option value="3341">POST COITAL TEST @ 600</option>
+                    <option value="3342">POST VACCI @ 810</option>
+                    <option value="3343">POTASSIUM @ 300</option>
+                    <option value="3344">PPE @ 1500</option>
+                    <option value="3345">PPE CHARGES @ 1100</option>
+                    <option value="3346">PRE-OPERATIVE PANEL @ 1200</option>
+                    <option value="3347">PRECOCIOUS PUBERTY @ 5100</option>
+                    <option value="3348">PREGNANCY TEST @ 300</option>
+                    <option value="3349">PROCALCITONIN (ECLIA) @ 3000</option>
+                    <option value="3350">PROGESTERONE @ 700</option>
+                    <option value="3351">PROLACTIN @ 700</option>
+                    <option value="3352">PROLACTIN {ECLIA} @ 700</option>
+                    <option value="3353">
+                      PROSTATIC SPECIFIC ANTIGEN @ 900
+                    </option>
+                    <option value="3354">
+                      PROTEIN IMMUNOGLOBULIN PROFILE @ 1600
+                    </option>
+                    <option value="3355">PROTEIN C @ 4400</option>
+                    <option value="3356">PROTEIN S (FREE) @ 4400</option>
+                    <option value="3357">PROTEIN/CREATININE RATIO @ 600</option>
+                    <option value="3358">
+                      PROTHROMBIN (G20210A) GENE MUTATION @ 7500
+                    </option>
+                    <option value="3359">
+                      PROTHROMBIN TIME STUDIES, CITRATED BLOOD @ 500
+                    </option>
+                    <option value="3360">
+                      PUS CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3361">
+                      QUALITATIVE ASSAY OF HBV DNA @ 5000
+                    </option>
+                    <option value="3362">
+                      QUALITATIVE ASSAY OF HCV RNA, SERUM/PLASMA @ 6000
+                    </option>
+                    <option value="3363">
+                      QUANTIFERON-TB GOLD; INTERFERON-GAMMA RELEASE ASSAY @ 3000
+                    </option>
+                    <option value="3364">
+                      QUANTITATIVE ASSAY OF HCV RNA, SERUM/PLASMA @ 8500
+                    </option>
+                    <option value="3365">
+                      QUANTITATIVE ASSAY OF HEPATITIS B VIRUS (HBV) DNA @ 7500
+                    </option>
+                    <option value="3366">
+                      QUANTITATIVE ASSAY OF HIV-1 RNA @ 5500
+                    </option>
+                    <option value="2917">
+                      RAPID AFB CULTURE (PROVISIONAL) @ 1500
+                    </option>
+                    <option value="3367">
+                      RAPID AFB CULTURE IDENTIFICATION @ 1200
+                    </option>
+                    <option value="3368">REACTIVE C PROTIEN @ 500</option>
+                    <option value="3369">RED BLOOD CELL COUNT @ 300</option>
+                    <option value="3370">
+                      RED CELL DISTRIBUTION WIDTH @ 300
+                    </option>
+                    <option value="3371">
+                      RESPIRATORY PANEL (FILM ARRAY-MULTIPLEX PCR) @ 15900
+                    </option>
+                    <option value="3372">RETICULOCYTE COUNT @ 450</option>
+                    <option value="3373">
+                      RHEUMATOID FACTOR (IMMUNOTURBIMETRIC ASSAY) @ 500
+                    </option>
+                    <option value="3374">
+                      RIGHT EAR SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3375">
+                      RIGHT EYE SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3376">
+                      RIGHT NASAL SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3377">
+                      RISK OF OVARIAN MALIGNANCY ALGORITHM (ROMA) @ 3000
+                    </option>
+                    <option value="3378">ROTAVIRUS ANTIGEN TEST @ 1000</option>
+                    <option value="3379">S.G.O.T. @ 250</option>
+                    <option value="3380">S.G.P.T. @ 250</option>
+                    <option value="3381">
+                      SARS-COV-2 QUANTITATIVE IGG ANTIBODIES, SERUM (CLIA) @
+                      1500
+                    </option>
+                    <option value="3382">
+                      SAS-REPRODUCTIVE TRACT INFECTIONS/SEXUALLY TRANSMITTED
+                      INFECTIONS PANEL @ 8000
+                    </option>
+                    <option value="3383">SCREENING (POD) @ 325</option>
+                    <option value="3384">SCREENING PANEL 1 @ 325</option>
+                    <option value="3385">
+                      SCRUB TYPHUS IGM ( ELISA ) @ 2000
+                    </option>
+                    <option value="3386">SCRUB TYPHUS RT-PCR @ 3000</option>
+                    <option value="3387">
+                      SEMINAL FLUID CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3388">
+                      SEMINAL FLUID EXAMINATION (SEMINOGRAM) @ 750
+                    </option>
+                    <option value="3389">SEPSIS PANEL @ 16000</option>
+                    <option value="3390">
+                      SERUM ALBUMIN ( COLORIMETRIC) @ 200
+                    </option>
+                    <option value="3391">
+                      SERUM ASCITES ALBUMIN GRADIENT [SAAG] @ 500
+                    </option>
+                    <option value="3392">SERUM CERULOPLASMIN @ 1200</option>
+                    <option value="3393">SERUM COPPER @ 1200</option>
+                    <option value="3394">
+                      SERUM CORTISOL (BASAL) [ECLIA] @ 800
+                    </option>
+                    <option value="3395">SERUM CORTISOL (EVENING) @ 800</option>
+                    <option value="3396">
+                      SERUM CORTISOL (MIDNIGHT) [ECLIA] @ 700
+                    </option>
+                    <option value="3397">
+                      SERUM CORTISOL (MORNING) [ECLIA] @ 800
+                    </option>
+                    <option value="3398">SERUM FREE LIGHT CHAIN @ 8600</option>
+                    <option value="3399">
+                      SERUM IMMUNOFIXATION ELECTROPHORESIS @ 7000
+                    </option>
+                    <option value="3400">SERUM IRON STUDIES @ 700</option>
+                    <option value="3401">SERUM OSMOLALITY @ 700</option>
+                    <option value="3402">
+                      SERUM PROTEIN ELECTROPHORESIS @ 1200
+                    </option>
+                    <option value="3403">SERUM VITAMIN B-12 @ 1200</option>
+                    <option value="3404">
+                      SERUM VITAMIN D-3 (25-OH) @ 2800
+                    </option>
+                    <option value="3405">
+                      SERUM VITAMIN D-3 (25-OH) @ 2800
+                    </option>
+                    <option value="3406">SERUM/PLASMA BICARBONATE @ 600</option>
+                    <option value="3407">
+                      SEX HORMONE BINDING GLOBULIN @ 2400
+                    </option>
+                    <option value="3408">
+                      SHORT GENERAL BODY PANEL 3 (DR MANKUL GOYAL) @ 6500
+                    </option>
+                    <option value="3409">SHORT STATURE @ 5250</option>
+                    <option value="3410">SLIDE/BLOCK FOR REVIEW @ 5000</option>
+                    <option value="3411">
+                      SMAC AND VITAMIN MINERAL PROFILE @ 10000
+                    </option>
+                    <option value="3412">SMAC ANEMIA PROFILE 1 @ 6900</option>
+                    <option value="3413">SMAC ANEMIA PROFILE 2 @ 7900</option>
+                    <option value="3414">SMAC FASTING @ 3500</option>
+                    <option value="3415">SMAC P @ 3500</option>
+                    <option value="3416">SMAC RANDOM @ 3500</option>
+                    <option value="3417">
+                      SMAC, VITAMIN MINERAL AND ARTHRITIS @ 14500
+                    </option>
+                    <option value="3418">SMAC/DB @ 5300</option>
+                    <option value="3419">
+                      SMACR AND VITAMIN MINERAL PROFILE @ 10000
+                    </option>
+                    <option value="3420">SMART CHECK PANEL @ 3500</option>
+                    <option value="3421">
+                      SMEAR FOR AFB. (Z-N STAIN) @ 500
+                    </option>
+                    <option value="3422">SMEAR FOR DIPHTHERIA @ 500</option>
+                    <option value="3423">SMEAR FOR GONOCOCCI @ 500</option>
+                    <option value="3424">SMEAR FOR NOCARDIA @ 600</option>
+                    <option value="3425">
+                      SMEAR FOR PNEUMOCYSTIS JIROVECII @ 600
+                    </option>
+                    <option value="3426">SODIUM @ 300</option>
+                    <option value="3427">SPARSH DIABETIC PANEL @ 2900</option>
+                    <option value="3428">SPARSH FEVER PANEL @ 1050</option>
+                    <option value="3429">
+                      SPARSH GENERAL WELLNESS PANEL @ 6900
+                    </option>
+                    <option value="3430">
+                      SPOT MICROALBUMIN CREATININE RATIO @ 700
+                    </option>
+                    <option value="3431">
+                      SPUTUM CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3432">
+                      SPUTUM FOR AFB (Z-N STAIN) @ 500
+                    </option>
+                    <option value="3433">SPUTUM FOR PNEUMOCYSTIS @ 500</option>
+                    <option value="3434">
+                      SPUTUM GRAM STAIN EXAMINATION @ 400
+                    </option>
+                    <option value="3435">STD PROFILE @ 8700</option>
+                    <option value="3436">STD PROFILE 1 @ 3700</option>
+                    <option value="3437">STD PROFILE 2 @ 8500</option>
+                    <option value="3438">
+                      STOOL CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3439">
+                      STOOL EXAMINATION (OCCULT BLOOD) @ 300
+                    </option>
+                    <option value="3440">
+                      STOOL EXAMINATION (ROUTINE) @ 300
+                    </option>
+                    <option value="3441">
+                      STOOL FOR REDUCING SUBSTANCES @ 300
+                    </option>
+                    <option value="3442">
+                      STOOL HANGING DROP PREPARATION FOR V CHOLERAE @ 500
+                    </option>
+                    <option value="3443">
+                      SUPERIOR SMART CHECK (SUPERIOR SMAC) @ 8600
+                    </option>
+                    <option value="3444">
+                      SUPERIOR SMART CHECK RANDOM (SUPERIOR SMAC) @ 8600
+                    </option>
+                    <option value="3445">SYPHILIS (CMIA) @ 1200</option>
+                    <option value="3446">T.S.H.(PTHY1) @ 450</option>
+                    <option value="3447">T.S.H.[ULTRASENSITIVE] @ 450</option>
+                    <option value="3448">TACROLIMUS @ 4500</option>
+                    <option value="3449">
+                      TAENIA SOLIUM (CYSTICERCOSIS) @ 2200
+                    </option>
+                    <option value="3450">
+                      TEST FOR CRYOGLOBULINS (SCREENING TEST) @ 200
+                    </option>
+                    <option value="3451">
+                      TESTOSTERONE CORTISOL RATIO @ 1700
+                    </option>
+                    <option value="3452">TESTOSTERONE FREE @ 1900</option>
+                    <option value="3453">TESTOSTERONE TOTAL @ 1000</option>
+                    <option value="3454">TETANUS IGG, SERUM @ 2000</option>
+                    <option value="3455">
+                      THROAT SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3456">
+                      THROAT SWAB GRAM STAIN EXAMINATION @ 500
+                    </option>
+                    <option value="3457">
+                      THROMBIN TIME, CITRATED BLOOD @ 1000
+                    </option>
+                    <option value="3458">THROMBOPHILIA PROFILE @ 24000</option>
+                    <option value="3459">THROMBOPHILIA PROFILE @ 27900</option>
+                    <option value="3460">THYROGLOBULIN @ 1800</option>
+                    <option value="3461">
+                      THYROID ANTIBODIES (CMIA) @ 2700
+                    </option>
+                    <option value="3462">THYROID PROFILE @ 1100</option>
+                    <option value="3463">THYROID PROFILE @ 1100</option>
+                    <option value="3464">TORCH (IgG) @ 2000</option>
+                    <option value="3465">TORCH (IgM) @ 2000</option>
+                    <option value="3466">TOTAL BILE ACIDS @ 1900</option>
+                    <option value="3467">TOTAL EOSINOPHIL COUNT @ 300</option>
+                    <option value="3468">TOTAL LEUCOCYTE COUNT @ 300</option>
+                    <option value="3469">TOTAL PROTEINS @ 300</option>
+                    <option value="3470">TRANSFERRIN [ELISA] @ 200</option>
+                    <option value="3471">
+                      TRICHOMONAS VAGINALIS, QUALITATIVE (RT PCR) @ 7000
+                    </option>
+                    <option value="3472">TRIGLYCERIDES @ 400</option>
+                    <option value="3473">TRIPLE MARKER TEST @ 3200</option>
+                    <option value="3474">TROPONIN-I @ 1800</option>
+                    <option value="3475">TYPHIDOT TEST @ 500</option>
+                    <option value="3476">TZANCK SMEAR @ 500</option>
+                    <option value="3477">UMBILICAL SWAB CULTURE @ 850</option>
+                    <option value="3478">
+                      UPPER RESPIRATORY PANEL @ 16900
+                    </option>
+                    <option value="3479">UREA @ 300</option>
+                    <option value="3480">
+                      URETHRAL SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3481">URIC ACID @ 300</option>
+                    <option value="3482">URINARY AMYLASE @ 500</option>
+                    <option value="3483">
+                      URINARY BILE SALTS, BILE PIGMENTS, UROBILINOGEN @ 300
+                    </option>
+                    <option value="3484">
+                      URINARY CALCIUM [SPOT URINE] @ 300
+                    </option>
+                    <option value="3485">URINARY PORPHOBILINOGEN @ 550</option>
+                    <option value="3486">URINARY SUGAR (24 HRS.) @ 100</option>
+                    <option value="3487">URINARY UREA @ 300</option>
+                    <option value="3488">
+                      URINE BENCE-JONES PROTEINS @ 600
+                    </option>
+                    <option value="3489">URINE CALCIUM @ 400</option>
+                    <option value="3490">URINE CHLORIDE @ 300</option>
+                    <option value="3491">
+                      URINE CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3492">
+                      URINE EXAMINATION ( ROUTINE) @ 200
+                    </option>
+                    <option value="3493">URINE FOR ALBUMIN @ 150</option>
+                    <option value="3494">URINE FOR KETONES @ 200</option>
+                    <option value="3495">
+                      URINE IMMUNOFIXATION ELECTROPHORESIS @ 5000
+                    </option>
+                    <option value="3496">
+                      URINE METABOLIC SCREENING @ 800
+                    </option>
+                    <option value="3497">
+                      URINE PHOSPHORUS EXCRETION @ 300
+                    </option>
+                    <option value="3498">URINE PORPHYRINS @ 600</option>
+                    <option value="3499">URINE POTASSIUM @ 300</option>
+                    <option value="3500">URINE PROTEIN @ 400</option>
+                    <option value="3501">
+                      URINE PROTEIN / CREATININE RATIO (24 HOURS) @ 600
+                    </option>
+                    <option value="3502">
+                      URINE PROTEIN ELECTROPHORESIS (URINE CONCENTRATED 100 X) @
+                      3500
+                    </option>
+                    <option value="3503">
+                      URINE QUANT. EXAM. PROTEINS @ 500
+                    </option>
+                    <option value="3504">URINE SODIUM @ 300</option>
+                    <option value="3505">URINE STRIP TEST @ 200</option>
+                    <option value="3506">URINE SUGAR (FASTING) @ 100</option>
+                    <option value="3507">
+                      URINE SUGAR (POST-PRANDIAL) @ 100
+                    </option>
+                    <option value="3508">URINE SUGAR-RANDOM @ 100</option>
+                    <option value="3509">URINE URIC ACID @ 300</option>
+                    <option value="3510">V/M PROFILE @ 3500</option>
+                    <option value="3511">
+                      VAGINAL SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3512">VAGINAL SWAB GRAM STAIN @ 400</option>
+                    <option value="3513">VALPROIC ACID @ 900</option>
+                    <option value="3514">VASCULITIS PANEL @ 4000</option>
+                    <option value="3515">VISIT 01 @ 300</option>
+                    <option value="3516">VISIT 04 @ 300</option>
+                    <option value="3517">VITAMIN D PANEL @ 3000</option>
+                    <option value="3518">VITAMIN D PANEL @ 3000</option>
+                    <option value="3519">VITAMIN D STUDY AIIMS @ 1000</option>
+                    <option value="3520">VITAMIN D STUDY SEHEAC @ 1600</option>
+                    <option value="3521">
+                      VITAMIN MINERAL AND ANEMIA 1 PROFILE @ 7400
+                    </option>
+                    <option value="3522">
+                      VITAMIN MINERAL AND ANEMIA 2 PROFILE @ 8500
+                    </option>
+                    <option value="3523">
+                      VITAMINS AND MINERALS PROFILE @ 6500
+                    </option>
+                    <option value="3524">WATER STERILITY TEST @ 1500</option>
+                    <option value="3525">WEIGHT IMBALANCE PANEL @ 16900</option>
+                    <option value="3526">WIDAL TEST (TUBE METHOD) @ 500</option>
+                    <option value="3527">
+                      WOUND SWAB CULTURE AND SENSITIVITY @ 850
+                    </option>
+                    <option value="3528">ZINC @ 2000</option></select
+                >
+            </div>
+
+            <div class="usr-input uploads">
+                <span class="upload-head head-text">Upload prescription <h6 style="display: inline; color: red;">(Files must be less than 2MB)</h6></span>
+                <label class="upload-f"for="upload1">Presc 1
+                    <input type="file" name="upload1" id="upload1" class="scanf">
+                </label>
+
+                <label class="upload-f"for="upload2">Presc 2
+                    <input type="file" name="upload2" id="upload2" class="scanf">
+                </label>
+
+                <label class="upload-f"for="upload3">Presc 3
+                    <input type="file" name="upload3" id="upload3" class="scanf">
+                </label>
+            </div>
+
+            <div>
+                <input type="reset" value="Clear" class="reset btn">
+                <input type="submit" value="Submit" class="submit btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
